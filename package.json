@@ -1,0 +1,21 @@
+{
+  "name": "test_freeplay",
+  "version": "1.0.0",
+  "description": "test task for freeplay.io",
+  "main": "IndexedMap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreikovna/test_freeplay.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreikovna/test_freeplay/issues"
+  },
+  "homepage": "https://github.com/andreikovna/test_freeplay#readme"
+}
