@@ -56,10 +56,14 @@ class IndexedMap {
   }
 
   union(...maps) {
-    maps.map((element) => {
-      this._map = { ...this._map, ...element._map };
-      this._array = Object.keys(this._map);
-    });
+    maps.map((collection) => {
+      this._map = { ...this._map, ...collection._map };
+      collection._array.map((element) => {
+        if (!this._array.includes(element)) {
+          this._array.push(element)
+        }
+      })
+    });  
     return this;
   }
 
@@ -96,6 +100,11 @@ class IndexedMap {
   }
 
   removeAt(index, count = 1) {
+    while (count !== 0) {
+      const key = this._array[index];
+      this.remove(key)
+      count --;
+    }
     return this;
   }
 }
